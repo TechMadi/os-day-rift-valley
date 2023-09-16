@@ -23,9 +23,19 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     //width: 100vw;
-  //height: 100vh;
+  height: 100vh;
 }
 
 p{
     font-family: 'Inconsolata', monospace;
 }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image:url("/assets/images/landing-image.png")  ;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+  }
