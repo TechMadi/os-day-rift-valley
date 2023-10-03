@@ -6,7 +6,40 @@
 @tailwind utilities;
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import 'node_modules/@taiga-ui/core/styles/taiga-ui-local.scss';
+
+// other styles
+
+$open-orange: #F2994A;
+$open-white:#ffffff;
+$open-blue:#160F25
+;
+:host {
+    display: block;
+}
+
+.stepper {
+    margin-bottom: 2rem;
+}
+
+.uppercase-name {
+    text-transform: uppercase;
+}
+
+.account {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+// .ticks-labels {
+//     .tui-slider-ticks-labels();
+
+//     color: var(--tui-text-02);
+//     margin-top: 0.25rem;
+// }
 
 
 *{
@@ -14,28 +47,56 @@
     margin: 0px;
 font-family: 'Karla', sans-serif;
 
-}
 
+}
 
 body{
-    background-image:url("/assets/images/landing-image.png")  ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    //width: 100vw;
-  height: 100vh;
-}
+    background-color: $open-blue !important;
+    color: $open-white !important;
 
+}
 p{
     font-family: 'Inconsolata', monospace;
 }
 
 
+tui-app-bar {
+    // .shadow(6);
+    background-color: $open-blue !important;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+ 
+.color {
+    // color: var(--tui-link);
+    color: $open-orange;
+}
+ 
+.gray {
+    box-shadow: none;
+    background: var(--tui-base-02);
+}
+ 
+.black {
+    background: var(--tui-text-01);
+    color: var(--tui-warning-fill-night);
+}
+ 
+.white {
+    color: var(--tui-base-01);
+}
+ 
+.reversed {
+    flex-direction: column-reverse;
+}
+ 
+.bar {
+    width: 8.75rem;
+}
+
+
 @media only screen and (max-width: 600px) {
     body {
-        background-image:url("/assets/images/landing-image.png")  ;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size:cover;
+       
     }
   }
