@@ -1,5 +1,5 @@
 import { NgDompurifySanitizer } from "@tinkoff/ng-dompurify";
-import { TuiRootModule, TuiDialogModule, TuiAlertModule, TUI_SANITIZER } from "@taiga-ui/core";
+import { TuiRootModule, TuiDialogModule, TuiAlertModule, TUI_SANITIZER, TuiLinkModule } from "@taiga-ui/core";
 import {TuiAppBarModule} from '@taiga-ui/addon-mobile';
 import {TuiButtonModule} from '@taiga-ui/core';
 
@@ -32,7 +32,8 @@ import { FooterComponent } from './sections/navigation/footer/footer.component';
       TuiDialogModule,
       TuiAlertModule,
       TuiAppBarModule,
-      TuiButtonModule
+      TuiButtonModule,
+      TuiLinkModule,
       
 ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],

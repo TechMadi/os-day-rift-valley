@@ -30,38 +30,58 @@
         We prioritize creating a welcoming space for all, regardless of their tech discipline,
 expertise.We have special sessions and plans to support women in Open Source, newbies in Open Source,and Open Source without boundaries.
       </p>
+      <p> <a
+        href="https://lu.ma/open-day-rv"
+        target="_blank"
+        appearance="accent"
+        tuiButton
+        type="button"
+        size="m"
+        tuiSlot="right"
+        class="tui-space_right-3 tui-space_bottom-3 my-6"
+        iconRight="tuiIconArrowRightLarge"
+    >
+        Sign Up On Luma
+    </a>
+  </p>
     </div>
   </div>
 </header>
 
 
-<section class="w-3/4 mx-auto px-4 py-4">
-  <div class="">
+<section  class="w-full" id="explore">
+  <div class="background w-3/4 mx-auto">
+
+ 
+  <div class="py-8">
     <p class="text-sm font-medium">What Next</p>
     <h2  class="text-4xl font-bold">Let's explore</h2>
   </div>
 
-  <div class="grid  grid-cols-2">
-    <div class="option my-2 py-4">
-      <img src="../../../assets/images/section-header.svg" alt="" class="">
-      <div class="option-header flex justify-start">
-        <p class="text-2xl font-bold">About Event </p> 	
-        <button
-	        tuiIconButton
-          appearance="flat"
-          icon="tuiIconExternalLink"
-	        type="button"
-          size="m"
-	        class="tui-space_right-1 tui-space_bottom-1 ml-3"  
-	    >
-	      py-4
-	    </button>
+  <div class="grid  grid-cols-2 ">
+    <div class="option my-2 py-8" *ngFor="let option of options">
+      <img src="../../../assets/images/section-header.svg" alt="" class="py-4 animate-pulse">
+      <div class="option-header flex justify-start items-center">
+        <p class="text-2xl font-bold text-open-orange" >{{option.name}} </p> 	
+        
+      <a
+      tuiLink
+      iconAlign="left"
+      [href]="option.link"
+      target="_blank"
+      size="m"
+      icon="tuiIconExternalLink"
+      class="ml-3 text-2xl text-open-orange"
+    >
+      
+    </a>
       </div>
       <div class="option-body">
         <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam corporis similique blanditiis vitae sit impedit, maxime hic eaque?</p>
       </div>
       
     </div>
+  </div>
   </div>
 </section>
 
