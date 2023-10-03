@@ -1,0 +1,110 @@
+<!-- Naviagtion -->
+
+<!-- <div class="container"> -->
+
+
+
+<header>
+  <div class="test">
+    <app-navbar></app-navbar>
+    <div class="grid w-3/4 mx-auto grid-row-3 py-8 mt-28">
+        <div class="text-left w-1/2">
+          <p  class="text-lg">Showcase the inclusive nature of Open Source and raises awareness of its vast interoperability across various technology fields</p>   
+        </div>
+        <div class="text-center">
+             <h1  class="text-5xl font-extrabold py-16 uppercase">
+                Open Source WITH NO BOUNDS
+             </h1>
+        </div>
+        <div class="flex justify-end">
+            <p class="text-left text-lg w-1/2">Explore Open Source's versatility across various technology fields  on 28th October  2023</p>   
+          </div>
+    </div>
+
+    <!-- Dedicated -->
+    <div class="w-3/4 mx-auto mt-36 py-28">
+      <h1 class="text-4xl font-bold">
+        Dedicated to guiding individuals to make impactful and high-quality contributions in the Open Source space.
+      </h1>
+      <p class="text-lg mt-10">
+        We prioritize creating a welcoming space for all, regardless of their tech discipline,
+expertise.We have special sessions and plans to support women in Open Source, newbies in Open Source,and Open Source without boundaries.
+      </p>
+      <p> <a
+        href="https://lu.ma/open-day-rv"
+        target="_blank"
+        appearance="accent"
+        tuiButton
+        type="button"
+        size="m"
+        tuiSlot="right"
+        class="tui-space_right-3 tui-space_bottom-3 my-6"
+        iconRight="tuiIconArrowRightLarge"
+    >
+        Sign Up On Luma
+    </a>
+  </p>
+    </div>
+  </div>
+</header>
+
+
+<section  class="w-full" id="explore">
+  <div class="background w-3/4 mx-auto">
+
+ 
+  <div class="py-8">
+    <p class="text-sm font-medium">What Next</p>
+    <h2  class="text-4xl font-bold">Let's explore</h2>
+  </div>
+
+  <div class="grid  grid-cols-2 ">
+    <div class="option my-2 py-8" *ngFor="let option of options">
+      <img src="../../../assets/images/section-header.svg" alt="" class="py-4 animate-pulse">
+      <div class="option-header flex justify-start items-center">
+        <p class="text-2xl font-bold text-open-orange" >{{option.name}} </p> 	
+        
+      <a
+      tuiLink
+      iconAlign="left"
+      [href]="option.link"
+      target="_blank"
+      size="m"
+      icon="tuiIconExternalLink"
+      class="ml-3 text-2xl text-open-orange"
+    >
+      
+    </a>
+      </div>
+      <div class="option-body">
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae quibusdam corporis similique blanditiis vitae sit impedit, maxime hic eaque?</p>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Navigation -->
+<app-footer></app-footer>
